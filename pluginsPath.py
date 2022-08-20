@@ -109,13 +109,14 @@ class PluginsPath(nukescripts.PythonPanel):
         self.plugin_name.clearFlag(nuke.STARTLINE)
         self.plugin_name.setFlag(0x0000000010000000)
         self.open_folder = nuke.PyScript_Knob("open_folder_{}".format(n), "Open Folder")
+        self.open_file = nuke.PyScript_Knob("open_file_{}".format(n), "Open File")
         self.copy_fullPath = nuke.PyScript_Knob("copy_fullPath_{}".format(n), "Copy Full Path")
         
         # add result knobs for search
-        for k in (self.plugin_path, self.plugin_name, self.open_folder, self.copy_fullPath):
+        for k in (self.plugin_path, self.plugin_name, self.open_folder, self.open_file, self.copy_fullPath):
             self.addKnob(k)
             
-        self.search_result[n] = [self.plugin_path, self.plugin_name, self.open_folder, self.copy_fullPath]
+        self.search_result[n] = [self.plugin_path, self.plugin_name, self.open_folder, self.open_file, self.copy_fullPath]
 
     def selectedTypes(self):
         selectedExt = []
@@ -295,7 +296,7 @@ class PluginsPath(nukescripts.PythonPanel):
         else:
             self.searchByKeyWord()
         
-    def openTheFolder(self, path):
+    def openThePath(self, path):
         # open folder
         operatingSystem = platform.system()
         
@@ -364,8 +365,16 @@ class PluginsPath(nukescripts.PythonPanel):
             for list_knobs in self.search_result.values():
                 if knob in list_knobs:
                     path = list_knobs[0].getValue()
-                    self.openTheFolder(path)
-                    
+                    self.openThePath(path)
+
+        # button_open the file
+        elif "open_file" in knob.name():
+            for list_knobs in self.search_result.values():
+                if knob in list_knobs:
+                    path = list_knobs[0].getValue() + list_knobs[1].getValue()
+                    self.openThePath(path)
+
+        # button_copy the full path
         elif "copy_fullPath" in knob.name():
             for list_knobs in self.search_result.values():
                 if knob in list_knobs:
