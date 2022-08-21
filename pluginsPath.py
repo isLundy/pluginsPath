@@ -102,7 +102,7 @@ class PluginsPath(nukescripts.PythonPanel):
             self.searchBySelectedNode()
 
     def add_knobs(self, n, fullPath, basename):
-        self.plugin_path = nuke.String_Knob("plugin_path_{}".format(n), "{} path".format(n), os.path.dirname(fullPath) + "/")
+        self.plugin_path = nuke.String_Knob("plugin_path_{}".format(n), "{} path".format(n), os.path.dirname(fullPath).replace('\\', '/') + "/")
         self.plugin_path.setFlag(nuke.STARTLINE)
         self.plugin_path.setFlag(0x0000000010000000)
         self.plugin_name = nuke.String_Knob("plugin_name_{}".format(n), "", basename)
