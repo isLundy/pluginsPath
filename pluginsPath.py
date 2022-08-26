@@ -305,7 +305,7 @@ class PluginsPath(nukescripts.PythonPanel):
         operatingSystem = platform.system()
         
         if operatingSystem == "Windows":
-            subprocess.Popen("explorer " + path.replace('/', '\\'))
+            subprocess.Popen("explorer ", path.replace('/', '\\'))
         elif operatingSystem == "Darwin":
             subprocess.Popen(["open", path])
         else:
