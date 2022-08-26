@@ -6,7 +6,7 @@ import subprocess
 
 try:
     from PySide2 import QtGui
-except:
+except ImportError:
     from PySide import QtGui
 
 class PluginsPath(nukescripts.PythonPanel):
