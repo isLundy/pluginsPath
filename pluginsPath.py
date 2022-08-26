@@ -3,11 +3,7 @@ import nukescripts
 import os
 import platform
 import subprocess
-
-try:
-    from PySide2 import QtGui
-except ImportError:
-    from PySide import QtGui
+from PySide2 import QtGui
 
 class PluginsPath(nukescripts.PythonPanel):
     def __init__(self):
