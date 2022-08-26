@@ -3,8 +3,11 @@ import nukescripts
 import os
 import platform
 import subprocess
-from PySide2 import QtGui
 
+try:
+    from PySide2 import QtGui
+except:
+    from PySide import QtGui
 
 class PluginsPath(nukescripts.PythonPanel):
     def __init__(self):
@@ -23,6 +26,7 @@ class PluginsPath(nukescripts.PythonPanel):
         self.to = nuke.Text_Knob("to", " ", "to ")
         self.to.clearFlag(nuke.STARTLINE)
         self.search = nuke.PyScript_Knob("search", "Search")
+        self.search.clearFlag(nuke.STARTLINE)
         self.keyWord_tips = nuke.Text_Knob("keyWord_tips", " ")
         self.keyWord_tips.setValue("Tips: Keyword length must be at least 3 characters (excluding spaces).")
         self.keyWord_tips.setEnabled(False)
