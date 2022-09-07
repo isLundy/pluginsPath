@@ -1,6 +1,6 @@
 # pluginsPath
 
-Search the file path from the keyword or the selected node of the currently loaded node in Nuke.
+Search the file path using keywords or from selected node.
 
 Requirements:
 
