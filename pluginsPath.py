@@ -263,6 +263,14 @@ class PluginsPath(nukescripts.PythonPanel):
             else:
                 self.search_result_title.setValue("total: {} ".format(n))
                 self.search_result_clear.setVisible(True)
+
+                if self.setFloat == 0:
+                    panelHeight = self.panelHeight_min + (n-1)*25
+                    if panelHeight <= 600:
+                        self.setMinimumSize(self.panelWidth_min, panelHeight)
+                    else:
+                        panelHeight = 600
+                        self.setMinimumSize(self.panelWidth_min, panelHeight)
                 
         # no selected ext
         else:
