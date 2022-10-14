@@ -2,9 +2,9 @@
 
 Search gizmo path using keywords or from selected node.
 
-Requirements:
+> Requirements:
 
-- Nuke 11 or later
+    Nuke 11 or later
 
 ## Installation example
 
