@@ -24,9 +24,9 @@ import pluginsPath
 
 s = nuke.menu("Nuke").addMenu("PythonScripts")
 s.addCommand('pluginsPath'，'pluginsPath')
+```
 
-
-### method 2
+### method 2 (Highly recommended)
 
 You can also put the code in W_hotbox, it's so convenient.
 
