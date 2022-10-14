@@ -23,7 +23,7 @@ import nuke
 import pluginsPath
 
 s = nuke.menu("Nuke").addMenu("PythonScripts")
-s.addCommand('pluginsPath'，'pluginsPath')
+s.addCommand('Plugins Path'，'pluginsPath')
 ```
 
 ### Method 2: ( Highly recommended )
