@@ -24,7 +24,7 @@ s = nuke.menu("Nuke").addMenu("PythonScripts")
 s.addCommand('Plugins Path'，'pluginsPath.PluginsPath().showModal()')
 ```
 
-### Method 2: ( Highly recommended )
+### Method 2: ( Highly recommended :exclamation: :exclamation: :exclamation: )
 
 You can also put the code of pluginsPath.py in `W_hotbox`, it's so convenient.
 
