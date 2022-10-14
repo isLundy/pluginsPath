@@ -1,6 +1,6 @@
 # pluginsPath
 
-Search the gizmo path using keywords or from selected node.
+Search gizmo path using keywords or from selected node.
 
 
 Requirements:
