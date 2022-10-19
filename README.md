@@ -4,6 +4,8 @@ Search gizmo path using keywords or from selected node.
 
 > Requirements: Nuke 12 or later
 
+<br />
+
 ## Installation example
 
 ### Method 1:
