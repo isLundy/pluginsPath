@@ -2,6 +2,8 @@
   pluginsPath
 </h1>
 
+<br />
+
 ## Introduce
 Search a gizmo path using keywords or from selected node.
 
