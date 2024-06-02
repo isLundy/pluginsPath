@@ -15,7 +15,9 @@ Select gizmo and run the script.
 <br />
 
 ## Installation
-You can directly install the [PythonScripts Toolkit for Nuke](https://github.com/isLundy/Nuke-PythonScripts-Toolkit.git), it shows in the `W_hotbox`.
+You can install this script in your own way.
+
+Alternatively, you can directly install the [PythonScripts Toolkit for Nuke](https://github.com/isLundy/Nuke-PythonScripts-Toolkit.git), where the script shows in the W_hotbox.
 
 ![usage 01](./images/usage_01.png)
 ![usage 02](./images/usage_02.png)
