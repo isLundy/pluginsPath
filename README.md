@@ -2,10 +2,14 @@
   pluginsPath
 </h1>
 
+## Introduce
+Search gizmo path using keywords or from selected node.
+
+<br />
+
 ## Usage
 > Required: Nuke 12 or later
-
-Search gizmo path using keywords or from selected node.
+Select gizmo and run the script.
 
 <br />
 
