@@ -1,3 +1,6 @@
+# URL: https://github.com/isLundy/pluginsPath
+# version: 1.0
+
 import nuke
 import nukescripts
 import os
