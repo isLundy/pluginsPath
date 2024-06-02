@@ -3,13 +3,13 @@
 </h1>
 
 ## Usage
-Search gizmo path using keywords or from selected node.
+> Required: Nuke 12 or later
 
-> Requirements: Nuke 12 or later
+Search gizmo path using keywords or from selected node.
 
 <br />
 
-## Installation example
+## Installation
 
 ### Method 1:
 
@@ -29,11 +29,9 @@ s = nuke.menu("Nuke").addMenu("PythonScripts")
 s.addCommand('Plugins Path'，'pluginsPath.PluginsPath().showModal()')
 ```
 
-### Method 2: ( Highly recommended :exclamation: :exclamation: :exclamation: )
+### Method 2
 
-You can also put the code for pluginsPath.py in `W_hotbox`, it's so convenient.
+Put the code into the `W_hotbox`.
 
-
-<img src="/images/W_hotbox_pluginsPath.png">
-
-<img src="/images/W_hotbox_pluginsPath_2.png">
+![usage 01](./images/usage_01.png)
+![usage 02](./images/usage_02.png)
