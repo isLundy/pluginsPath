@@ -9,6 +9,7 @@ Search gizmo path using keywords or from selected node.
 
 ## Usage
 > Required: Nuke 12 or later
+
 Select gizmo and run the script.
 
 <br />
