@@ -3,7 +3,7 @@
 </h1>
 
 ## Introduce
-Search gizmo path using keywords or from selected node.
+Search a gizmo path using keywords or from selected node.
 
 <br />
 
